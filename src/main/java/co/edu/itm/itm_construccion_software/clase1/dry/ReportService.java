@@ -4,23 +4,22 @@ public class ReportService {
 
   public void generatePDFReport(String data) {
     System.out.println("Generando PDF con datos: " + data);
-    sumarYMultiplicar();
+    sumarMultiplicarYExportar();
   }
 
   public void generateExcelReport(String data) {
     System.out.println("Generando Excel con datos: " + data);
-    sumarYMultiplicar();
+    sumarMultiplicarYExportar();
   }
 
   public void generateWprdReport(String data) {
     System.out.println("Generando Excel con datos: " + data);
-    sumarYMultiplicar();
+    sumarMultiplicarYExportar();
   }
 
-  private static void sumarYMultiplicar() {
+  private static void sumarMultiplicarYExportar() {
     int suma =  1 + 2;
     int multiplicacion =  suma * suma;
     System.out.println(multiplicacion);
   }
-
 }
