@@ -8,14 +8,32 @@ class CalculadoraTest {
 
   @Test
   void testSuma() {
+    // Arrange
+    int a = 2;
+    int b = 3;
     Calculadora calc = new Calculadora();
-    assertEquals(5, calc.sumar(2, 3));
+
+    // Act
+
+    int result = calc.sumar(a, b);
+
+    // Assert
+    assertEquals(5, result);
   }
 
   @Test
-  void testSumaErronea() {
+  void testSumaError() {
+    // Arrange
+    int a = 10;
+    int b = 3;
     Calculadora calc = new Calculadora();
-    assertNotEquals(6, calc.sumar(2, 3));
+
+    // Act
+
+    int result = calc.sumar(a, b);
+
+    // Assert
+    assertNotEquals(5, result);
   }
 
 }
